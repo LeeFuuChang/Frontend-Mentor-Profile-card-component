@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Profile card component</title>
+</head>
+<body>
+  <div class="card" role="main">
+    <div class="card-bg">
+      <img class="card-bg-img" src="images/bg-pattern-card.svg" alt="Card bg">
+    </div>
+    <div class="card-content">
+      <div class="card-content-icon">
+        <img class="card-content-icon-img" src="images/image-victor.jpg" alt="Icon">
+      </div>
+      <div class="card-content-info">
+        <div class="card-content-info-user">
+          <h1 class="card-content-info-user-name">Victor Crest</h1>
+          <h1 class="card-content-info-user-age">26</h1>
+        </div>
+        <p class="card-content-info-location">London</p>
+      </div>
+      <span class="card-content-line"></span>
+      <div class="card-content-dataset">
+        <div class="card-content-data-followers card-content-data">
+          <h1 class="card-content-data-followers-title card-content-data-title">80K</h1>
+          <p class="card-content-data-followers-description card-content-data-description">Followers</p>
+        </div>
+        <div class="card-content-data-likes card-content-data">
+          <h1 class="card-content-data-likes-title card-content-data-title">803K</h1>
+          <p class="card-content-data-likes-description card-content-data-description">Likes</p>
+        </div>
+        <div class="card-content-data-photos card-content-data">
+          <h1 class="card-content-data-photos-title card-content-data-title">1.4K</h1>
+          <p class="card-content-data-photos-description card-content-data-description">Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.leefuuchang.in">LeeFuuChang</a>.
+  </footer>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #19a1ad;
+  }
+
+  .card {
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 350px;
+    height: 375px;
+    background: #ffffff;
+  }
+
+  .card .card-bg, .card .card-bg .card-bg-img {
+    width: 100%;
+  }
+
+  .card .card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -15%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card .card-content .card-content-icon {
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+  .card .card-content .card-content-icon .card-content-icon-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card .card-content .card-content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: min-content;
+  }
+  .card .card-content .card-content-info .card-content-info-user  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    width: 100%;
+    height: min-content;
+  }
+  .card .card-content .card-content-info .card-content-info-user .card-content-info-user-age {
+    color: #7d7e83;
+  }
+  .card .card-content .card-content-info .card-content-info-location {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #7d7e83;
+  }
+
+  .card .card-content .card-content-line {
+    margin: 15px 0;
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    height: 0;
+  }
+
+  .card .card-content .card-content-dataset {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    width: 100%;
+  }
+
+  .card .card-content .card-content-dataset .card-content-data {
+    text-align: center;
+  }
+  .card .card-content .card-content-dataset .card-content-data .card-content-data-description {
+    font-size: 14px;
+    margin: 4px;
+    color: #7d7e83;
+  }
+
+
+  .attribution {
+    position: relative;
+    top: 30px;
+    font-size: 8px; 
+    text-align: center; 
+  }
+  .attribution a {
+    color: #eeeeee; 
+  }
+</style>
+</html>
